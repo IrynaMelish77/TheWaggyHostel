@@ -1,0 +1,343 @@
+/* Colours:
+#a5b462
+#97533d
+#e1a26a
+#f2f0ee
+#705a56
+
+*/
+
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+body { 
+    width: 100vw; 
+    max-width: 100%; 
+    font-size: 16px; 
+    font-family: 'Lato', sans-serif;  
+   
+   
+    color: #705a56;
+} 
+header { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    
+    top: 0; 
+    background-color: #ffffff; 
+    z-index: 99999; 
+    letter-spacing: .2rem;
+} 
+ 
+.logo{
+    text-align: center;
+margin: 0 auto;
+display: block;
+}
+
+.main-nav { 
+    width: 90%; 
+    padding: 1rem; 
+    
+} 
+ 
+.main-ul { 
+    height: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-end; 
+} 
+ 
+.main-li { 
+    padding: 0 2rem; 
+    list-style-type: none; 
+} 
+ 
+.main-li a{ 
+    cursor: pointer;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: #705a56;
+    transition: color .3s ease-in-out;
+
+} 
+  
+  
+ 
+.main-li a:hover { 
+   color: #a5b462;
+   
+   
+} 
+ 
+
+#banner { 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 100%; 
+    height: 60vh;
+    
+    background-image: url(images/banner.png); 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+   
+    letter-spacing: .2rem;
+
+} 
+ 
+.banner-header { 
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: #705a56;
+    text-transform: uppercase;
+
+}
+.banner-header span{
+    font-family: 'Lato', sans-serif;  
+    color: #a5b462;
+    font-style: normal;
+}
+ 
+.banner-text { 
+    width:30%;
+    /* font-style: italic; */
+    text-align: center;
+   font-size: 1.5rem;
+   color: #f2f0ee;
+  
+   
+}  
+/*-------------------------Gallery section---------*/
+#gallery { 
+    width: 100%; 
+} 
+ 
+.gallery-photos { 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+} 
+ 
+.gallery-photo{ 
+    margin: 1rem; 
+    max-width: 30vw; 
+    height:350px ;
+    box-shadow: 5px 10px 5px rgba(0,0,0,.5); 
+} 
+ 
+.gallery-header { 
+    
+    width: 100%; 
+    text-align: center; 
+    padding: 2.5rem 0 2rem; 
+    font-size: 2rem; 
+} 
+
+/*------------------------Footer section-----------------*/
+
+#footer { 
+    margin-top: 2rem;
+    padding-top: 2rem;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 100%; 
+    height: 15vh;
+    
+    background-color: #705a56; 
+    background-position: center center; 
+    
+ } 
+ .footer-text { 
+  
+    /* font-style: italic; */
+    text-align: center;
+   font-size: 1rem;
+   color: #f2f0ee;
+   letter-spacing: .2rem;
+  
+   
+}  
+.footer-autor { 
+  
+   /* font-style: italic;  */
+    text-align: center;
+   font-size: 1rem;
+   color:  #a5b462;
+   letter-spacing: .2rem;
+  
+   
+}  
+
+/*------------------------About us page --------------------*/
+#banner_about,
+#banner_contact
+{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 100%; 
+    height: 20vh;
+    
+    background-color:#a5b462; 
+    background-position: center center; 
+      
+    letter-spacing: .2rem;
+}
+.banner_about-header,
+.banner_contact-header
+{
+    color:white;
+    text-transform: uppercase;
+}
+#aboutus { 
+    position: relative; 
+    width: 100%; 
+    height: 60vh; 
+    background-image: url(../images/scotland_map.png); 
+    background-position: right 10% center; 
+    background-repeat: no-repeat; 
+    background-size: contain;     
+} 
+.aboutus_container{ 
+    
+    display: flex; 
+    flex-direction: row; 
+    margin: 1rem; 
+} 
+.aboutus-image, 
+.aboutus-content
+ { 
+    width: 50%; 
+    padding: 1rem; 
+} 
+.aboutus-image img { 
+    height: 400px;
+    width: 100%; 
+    box-shadow: 5px 10px 5px rgba(0,0,0,.5); 
+} 
+
+.aboutus-content { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.aboutus-title { 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: #a5b462;
+} 
+ 
+.aboutus-text { 
+    text-align: justify; 
+    font-size: 1rem; }
+
+ /*------------------------Contact us page --------------------*/
+ #contact_container{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 100%; 
+   
+    
+    
+    background-position: center center; 
+ }
+ #form { 
+    width: 100%;  
+    padding: 1rem 0;    
+} 
+ 
+.form-header { 
+    width: 100%; 
+    text-align: center;  
+    font-size: 1rem;   
+    padding-bottom: 1rem; 
+} 
+ 
+#contact-form { 
+    background-color: #f2f0ee;
+    
+    width: 50%; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    box-shadow: 5px 10px 5px rgba(0,0,0,.5); 
+} 
+label, input, select, textarea { 
+    padding: 0.5rem; 
+    width: 90%; 
+} 
+ 
+textarea { 
+    box-shadow: 1px 1px 2px 2px #a5b462;
+} 
+ 
+
+ 
+input:required { 
+    border: 1px solid  #705a56; 
+    box-shadow: 1px 1px 2px 2px  #a5b462;
+} 
+
+ 
+input[type=submit] { 
+    margin: 1rem 0; 
+    padding: 0.5rem; 
+    width: 20%; 
+    border-radius: 10px; 
+    background-color:#705a56;
+    color: white  ; 
+    
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    transition: background-color .3s ease-in-out;
+    
+
+   
+} 
+input[type=submit]:hover { 
+    background-color: #a5b462;
+    border-color: #a5b462;
+ } 
+input,
+textarea:focus {
+    outline: none;
+  }
+ 
+label { 
+    
+    font-weight: bold; 
+} 
+ 
